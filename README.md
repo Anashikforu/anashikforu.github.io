@@ -1,356 +1,356 @@
-# Simplefolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobidev/simplefolio?color=blue)](https://github.com/cobidev/simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobidev/simplefolio) ![GitHub forks](https://img.shields.io/github/forks/cobidev/simplefolio)
 
-## A minimal portfolio template for Developers!
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobidev/simplefolio/
+  Readme: https://github.com/cobidev/simplefolio/README.md
+  -
+  For business & inquires, contact me -> jacobojavier98@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/favicon.12ba245e.png">
 
-<h2 align="center">
-  <img src="https://github.com/cobidev/gatsby-simplefolio/blob/master/examples/example.gif" alt="Simplefolio" width="600px" />
-  <br>
-</h2>
+    <!-- Todo: put here your site title -->
+    <title>[Your name here] | Developer</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill">
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="[Your name here] | Developer">
 
-## Features
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/index.de7da63a.css">
+    <script defer="" src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-⚡️ Modern UI Design + Reveal Animations\
-⚡️ One Page Layout\
-⚡️ Styled with Bootstrap v4.3 + Custom SCSS\
-⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
-⚡️ Optimized with Parcel\
-⚡️ Well organized documentation
+    <!-- Todo: remove the below script once you finish your portfolio -->
+    <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+  </head>
 
-To view the demo: **[click here](https://the-simplefolio.netlify.app/)**
+  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
 
----
-
-## Why do you need a portfolio? ☝️
-
-- Professional way to showcase your work
-- Increases your visibility and online presence
-- Shows you’re more than just a resume
-
-## Getting Started 🚀
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites 📋
-
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [NPM](http://npmjs.com)) installed on your computer.
-
-```
-node@v16.4.2 or higher
-npm@7.18.1 or higher
-git@2.30.1 or higher
-```
-
-Also, you can use [Yarn](https://yarnpkg.com/) instead of NPM ☝️
-
-```
-yarn@v1.22.10 or higher
-```
-
----
-
-## How To Use 🔧
-
-From your command line, first clone Simplefolio:
-
-```bash
-# Clone the repository
-$ git clone https://github.com/cobidev/simplefolio
-
-# Move into the repository
-$ cd simplefolio
-
-# Remove the current origin repository
-$ git remote remove origin
-```
-
-After that, you can install the dependencies either using NPM or Yarn.
-
-Using NPM: Simply run the below commands.
-
-```bash
-# Install dependencies
-$ npm install
-
-# Start the development server
-$ npm start
-```
-
-Using Yarn: Be aware of that you'll need to delete the `package-lock.json` file before executing the below commands.
-
-```bash
-# Install dependencies
-$ yarn
-
-# Start the development server
-$ yarn start
-```
-
-**NOTE**:
-If your run into issues installing the dependencies with NPM, use this below command:
-
-```bash
-# Install dependencies with all permissions
-$ sudo npm install --unsafe-perm=true --allow-root
-```
-
-Once your server has started, go to this url `http://localhost:1234/` to see the portfolio locally. It should look like the below screenshot.
-
-<h2 align="center">
-  <img src="https://github.com/cobidev/gatsby-simplefolio/blob/master/examples/example.png" alt="Simplefolio" width="100%">
-</h2>
-
----
-
-## Template Instructions:
-
-### Step 1 - STRUCTURE
-
-Go to `/src/index.html` and put your information, there are 5 sections:
-
-### (1) Hero Section
-
-- On `.hero-title`, put your custom portfolio title.
-- On `.hero-cta`, put your custom button label.
-
-```html
-<!-- **** Hero Section **** -->
-<section id="hero" class="jumbotron">
-  <div class="container">
-    <h1 class="hero-title load-hidden">
-      Hi, my name is <span class="text-color-main">Your Name</span>
-      <br />
-      I'm the Unknown Developer.
-    </h1>
-    <p class="hero-cta load-hidden">
-      <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">
-        Know more
-      </a>
-    </p>
-  </div>
-</section>
-<!-- /END Hero Section -->
-```
-
-### (2) About Section
-
-- On `<img>` tag, fill the `src` property with your profile picture path, your picture must be located inside `/src/assets/` folder.
-- On `<p>` tag with class name `.about-wrapper__info-text`, include information about you, I recommend to put 2 paragraphs in order to work well and a maximum of 3 paragraphs.
-- On last `<a>` tag, include your CV (.pdf) path on `href` property, your resume CV must be located inside `/src/assets/` folder.
-
-```html
-<!-- **** About Section **** -->
-<section id="about">
-  <div class="container">
-    <h2 class="section-title load-hidden">About me</h2>
-    <div class="row about-wrapper">
-      <div class="col-md-6 col-sm-12">
-        <div class="about-wrapper__image load-hidden">
-          <img
-            alt="Profile Image"
-            class="img-fluid rounded shadow-lg"
-            height="auto"
-            width="300px"
-            src="assets/profile.jpg"
-            alt="Profile Image"
-          />
-        </div>
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          Hi, my name is <span class="text-color-main">Ashik Khan</span>
+          <br>
+          I'm a Software Engineer.
+        </h1>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a>
+        </p>
       </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="about-wrapper__info load-hidden">
-          <p class="about-wrapper__info-text">
-            This is where you can describe about yourself. The more you describe
-            about yourself, the more chances you can!
-          </p>
-          <p class="about-wrapper__info-text">
-            Extra Information about you! like hobbies and your goals.
-          </p>
-          <span class="d-flex mt-3">
-            <a
-              rel="noreferrer"
-              target="_blank"
-              class="cta-btn cta-btn--resume"
-              href="assets/resume.pdf"
-            >
-              View Resume
-            </a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /END About Section -->
-```
+    </section>
+    <!-- /END Hero Section -->
 
-### (3) Projects Section
-
-- Each project lives inside a `row`.
-- On `<h3>` tag with class name `.project-wrapper__text-title`, include your project title.
-- On `<p>` tag with `loremp ipsum` text, include your project description.
-- On first `<a>` tag, put your project url on `href` property.
-- On second `<a>` tag, put your project repository url on `href` property.
-
----
-
-- Inside `<div>` tag with class name `.project-wrapper__image`, put your project image url on the `src` of the `<img>` and put again your project url in the `href` property of the `<a>` tag.
-- Recommended size for project image (1366 x 767), your project image must be located inside `/src/assets/` folder.
-
-```html
-<!-- **** Projects Section **** -->
-<section id="projects">
-  ...
-  <!-- Notice: each .row is a project -->
-  <div class="row">
-    <div class="col-lg-4 col-sm-12">
-      <div class="project-wrapper__text load-hidden">
-        <h3 class="project-wrapper__text-title">Project Title</h3>
-        <div>
-          <p class="mb-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
-            neque, ipsa animi maiores repellendus distinctio aperiam earum dolor
-            voluptatum consequatur blanditiis inventore debitis fuga numquam
-            voluptate ex architecto itaque molestiae.
-          </p>
-        </div>
-        <a
-          rel="noreferrer"
-          target="_blank"
-          class="cta-btn cta-btn--hero"
-          href="#!"
-        >
-          See Live
-        </a>
-        <a
-          rel="noreferrer"
-          target="_blank"
-          class="cta-btn text-color-main"
-          href="#!"
-        >
-          Source Code
-        </a>
-      </div>
-    </div>
-    <div class="col-lg-8 col-sm-12">
-      <div class="project-wrapper__image load-hidden">
-        <a rel="noreferrer" href="#!" target="_blank">
-          <div
-            data-tilt
-            data-tilt-max="4"
-            data-tilt-glare="true"
-            data-tilt-max-glare="0.5"
-            class="thumbnail rounded js-tilt"
-          >
-            <img
-              alt="Project Image"
-              class="img-fluid"
-              src="assets/project.jpg"
-            />
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img alt="Profile Image" class="img-fluid rounded shadow-lg" height="auto" width="300px" src="/ashik.c5ee1876.jpg">
+            </div>
           </div>
-        </a>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                I like taking on challenges, learning about new technology, and discovering new things. I am proficient in full-stack web development with React JS and Laravel. In addition to web development, Data Science is one of my passions. I am actively seeking employment while studying for my Masters of Technology in Computer Science & Engineering at IIT Kharagpur. My research interests include Deep Learning, Computer Vision, Information Retrieval, and Machine Learning.
+              </p>
+              <p class="about-wrapper__info-text">
+                Apart from hobbies, playing and watching cricket has been my favourite hobbies from childhood.Shakib Al Hasan is my favourite sports person.
+              </p>
+              <span class="d-flex mt-3">
+                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="/assets/Md_Ashik_Khan_RS.pdf">
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <!-- /END Project -->
-  ...
-</section>
-```
+    </section>
+    <!-- /END About Section -->
 
-### (4) Contact Section
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
 
-- On `<p>` tag with class name `.contact-wrapper__text`, include some custom call-to-action message.
-- On `<a>` tag, put your email address on `href` property.
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-7 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">A Large-scale Study of Representation Learning and the Benchmarking in Video Action Recognition</h3>
+                <div>
+                  <p class="mb-7">
+                    Comparative study of Representation Learning and Benchmarking with video action recognition by performing three types of experiments: Full-fine-tuning, Linear Evaluation, and Few-Shot Learning.
+                  </p>
+                  <p class="mb-7">
+                    Generated Construction Action Recognition dataset for learning and evaluating construction action is the first of its kind.
+                  </p>
+                </div>
+                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                  See Live
+                </a>
+                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://docs.google.com/presentation/d/1mH-tJNCBDU6Ztv98-C2KdxZc_VTAuxIT">
+                  Report Link
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5" class="thumbnail rounded js-tilt">
+                    <img alt="Project Image" class="img-fluid" src="/project.363fc093.jpg">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
 
-```html
-<!-- **** Contact Section **** -->
-<section id="contact">
-  <div class="container">
-    <h2 class="section-title">Contact</h2>
-    <div class="contact-wrapper load-hidden">
-      <p class="contact-wrapper__text">[Put your call to action here]</p>
-      <a
-        rel="noreferrer"
-        target="_blank"
-        class="cta-btn cta-btn--resume"
-        href="mailto:example@email.com"
-        >Call to Action</a
-      >
-    </div>
-  </div>
-</section>
-<!-- /END Contact Section -->
-```
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-7 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Evidence Retrieval for Fact Verification</h3>
+                <div>
+                  <p class="mb-7">
+                    Evidence Retrieval for Fact Verification project focuses on collecting the related evidence based on a claim or fact using classical IR methods.
+                  </p>
+                  <p class="mb-7">
+                    This project carries a different approach to Evidence Retrieval with creation of collated data and measures the related evidence using tf-idf score and cosine similarity.
+                  </p>
+                </div>
+                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                  See Live
+                </a>
+                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/Anashikforu/Evidence-Retrieval-for-Fact-Verification">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5" class="thumbnail rounded js-tilt">
+                    <img alt="Project Image" class="img-fluid" src="/project.363fc093.jpg">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
 
-### (5) Footer Section
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-7 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Context Specific Quote Recommendation from Historical Text</h3>
+                <div>
+                  <p class="mb-7">
+                    Development of a context-based quote recommendation system using the Hugging Face DistilBERT model followed by dataset preparation and annotations from Quotation POTUS and encoding to feed in the model.
+                  </p>
+                  <p class="mb-7">
+                    Full-finetuned the model for learning and evaluating the quoted phrases, which obtained an improved performance over the prior Perceptron Model.
+                  </p>
+                </div>
+                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                  See Live
+                </a>
+                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/Anashikforu/IIT-KGP/tree/main/Computing%20Lab%202/Assignment%2003">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5" class="thumbnail rounded js-tilt">
+                    <img alt="Project Image" class="img-fluid" src="/project.363fc093.jpg">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
 
-- Put your Social Media URL on each `href` attribute of the `<a>` tags.
-- If you an additional Social Media account different than Twitter, Linkedin or GitHub, then go to [Font Awesome Icons](https://fontawesome.com/v4.7.0/icons/) and search for the icon's class name you are looking.
-- You can delete or add as many `<a>` tags your want.
+        </div>
+        </div>
+      
+    </section>
+    <!-- /END Projects Section -->
 
-```html
-<footer class="footer navbar-static-bottom">
-  ...
-  <div class="social-links">
-    <a href="#!" target="_blank">
-      <i class="fa fa-twitter fa-inverse"></i>
-    </a>
-    <a href="#!" target="_blank">
-      <i class="fa fa-linkedin fa-inverse"></i>
-    </a>
-    <a href="#!" target="_blank">
-      <i class="fa fa-github fa-inverse"></i>
-    </a>
-  </div>
-  ...
-</footer>
-```
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">SKILL</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img alt="Profile Image" class="img-fluid rounded shadow-lg" height="auto" width="300px" src="/ashik.c5ee1876.jpg">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                I like taking on challenges, learning about new technology, and discovering new things. I am proficient in full-stack web development with React JS and Laravel. In addition to web development, Data Science is one of my passions. I am actively seeking employment while studying for my Masters of Technology in Computer Science & Engineering at IIT Kharagpur. My research interests include Deep Learning, Computer Vision, Information Retrieval, and Machine Learning.
+              </p>
+              <p class="about-wrapper__info-text">
+                Apart from hobbies, playing and watching cricket has been my favourite hobbies from childhood.Shakib Al Hasan is my favourite sports person.
+              </p>
+              <span class="d-flex mt-3">
+                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="/assets/Md_Ashik_Khan_RS.pdf">
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
 
-### Step 2 - STYLES
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Experience</h2>
 
-Change the color theme of the website - (choose 2 colors to create a gradient)
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-7 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">A Large-scale Study of Representation Learning and the Benchmarking in Video Action Recognition</h3>
+                <div>
+                  <p class="mb-7">
+                    Comparative study of Representation Learning and Benchmarking with video action recognition by performing three types of experiments: Full-fine-tuning, Linear Evaluation, and Few-Shot Learning.
+                  </p>
+                  <p class="mb-7">
+                    Generated Construction Action Recognition dataset for learning and evaluating construction action is the first of its kind.
+                  </p>
+                </div>
+                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                  See Live
+                </a>
+                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://docs.google.com/presentation/d/1mH-tJNCBDU6Ztv98-C2KdxZc_VTAuxIT">
+                  Report Link
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5" class="thumbnail rounded js-tilt">
+                    <img alt="Project Image" class="img-fluid" src="/project.363fc093.jpg">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
 
-Go to `/src/sass/abstracts/_variables.scss` and only change the values for this variables `$main-color` and `$secondary-color` with your prefered HEX color.
-If you want to get some gradients inspiration I highly recommend you to check this website [UI Gradient](https://uigradients.com/#BrightVault)
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-7 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Evidence Retrieval for Fact Verification</h3>
+                <div>
+                  <p class="mb-7">
+                    Evidence Retrieval for Fact Verification project focuses on collecting the related evidence based on a claim or fact using classical IR methods.
+                  </p>
+                  <p class="mb-7">
+                    This project carries a different approach to Evidence Retrieval with creation of collated data and measures the related evidence using tf-idf score and cosine similarity.
+                  </p>
+                </div>
+                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                  See Live
+                </a>
+                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/Anashikforu/Evidence-Retrieval-for-Fact-Verification">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5" class="thumbnail rounded js-tilt">
+                    <img alt="Project Image" class="img-fluid" src="/project.363fc093.jpg">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
 
-```scss
-// Default values
-$main-color: #02aab0;
-$secondary-color: #00cdac;
-```
 
----
+        </div>
+        </div>
+      
+    </section>
+    <!-- /END Projects Section -->
 
-## Deployment 📦
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper load-hidden">
+          <!-- <p class="contact-wrapper__text">(+91) 7063633773</p> -->
+          <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="#">(+91) 7063633773</a>
+          <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="mailto:aasshhik98@email.com">aasshhik98@email.com</a>
+          <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="mailto:aasshhik98@email.com">ashik.khan@kgpian.iitkgp.ac.in</a>
+          
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
 
-Once you finish your setup. You need to put your website online!
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a rel="noreferrer" href="https://www.linkedin.com/in/iamashik/" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="https://github.com/Anashikforu" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="https://leetcode.com/aasshhik98/" target="_blank">
+            <img alt="Project Image" class="img-fluid" src="/LeetCode_logo_rvs.947dff4a.png">
+          </a>
+          <a rel="noreferrer" href="https://twitter.com/iamAshikyoo" target="_blank">
+            <i class="fa fa-twitter fa-inverse"></i>
+          </a>
+        </div>
 
-I highly recommend to use [Netlify](https://netlify.com) because it is super easy.
+        <hr>
 
-## Others versions 👥
+        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+        <p class="footer__text">
+          © 2023 - Template Courtesy :
+          <a rel="noreferrer" href="https://github.com/cobidev" target="_blank">Jacobo Martínez</a>
+        </p>
 
-[Gatsby Simplefolio](https://github.com/cobidev/gatsby-simplefolio) by [Jacobo Martinez](https://github.com/cobidev)\
-[Ember.js Simplefolio](https://github.com/sernadesigns/simplefolio-ember) by [Michael Serna](https://github.com/sernadesigns)
+        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
 
-## Technologies used 🛠️
-
-- [Parcel](https://parceljs.org/) - Bundler
-- [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) - Frontend component library
-- [Sass](https://sass-lang.com/documentation) - CSS extension language
-- [ScrollReveal.js](https://scrollrevealjs.org/) - JavaScript library
-- [Tilt.js](https://gijsroge.github.io/tilt.js/) - JavaScript tiny parallax library
-
-## Authors
-
-- **Jacobo Martinez** - [https://github.com/cobidev](https://github.com/cobidev)
-
-## Status
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3a029bfd-575c-41e5-8249-c864d482c2e5/deploy-status)](https://app.netlify.com/sites/the-simplefolio/deploys)
-
-## License 📄
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments 🎁
-
-I was motivated to create this project because I wanted to contribute on something useful for the dev community, thanks to [ZTM Community](https://github.com/zero-to-mastery) and [Andrei](https://github.com/aneagoie)
+    <script defer="" src="/index.379dd93c.js"></script>
+  </body>
+</html>
